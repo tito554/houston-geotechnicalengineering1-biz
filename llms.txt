@@ -1,0 +1,62 @@
+# Houston
+
+> Geotechnical engineering company in United States, providing professional services in soil mechanics, foundation engineering and site investigation.
+
+## Services
+- [Active Passive Anchor Design](https://houston.geotechnicalengineering1.biz/active-passive-anchor-design/)
+- [Atterberg Limits](https://houston.geotechnicalengineering1.biz/atterberg-limits/)
+- [Bearing Capacity Analysis](https://houston.geotechnicalengineering1.biz/bearing-capacity-analysis/)
+- [Cbr Study Road Design](https://houston.geotechnicalengineering1.biz/cbr-study-road-design/)
+- [Collapsible Soil Evaluation](https://houston.geotechnicalengineering1.biz/collapsible-soil-evaluation/)
+- [Cone Penetration](https://houston.geotechnicalengineering1.biz/cone-penetration/)
+- [Contaminated Soil Remediation](https://houston.geotechnicalengineering1.biz/contaminated-soil-remediation/)
+- [Debris Flow Analysis](https://houston.geotechnicalengineering1.biz/debris-flow-analysis/)
+- [Deep Soil Mixing](https://houston.geotechnicalengineering1.biz/deep-soil-mixing/)
+- [Diaphragm Wall Design](https://houston.geotechnicalengineering1.biz/diaphragm-wall-design/)
+- [Direct Shear](https://houston.geotechnicalengineering1.biz/direct-shear/)
+- [Driven Pile Design](https://houston.geotechnicalengineering1.biz/driven-pile-design/)
+- [Dynamic Compaction Design](https://houston.geotechnicalengineering1.biz/dynamic-compaction-design/)
+- [Electrical Resistivity Ves](https://houston.geotechnicalengineering1.biz/electrical-resistivity-ves/)
+- [Expansive Soil Evaluation](https://houston.geotechnicalengineering1.biz/expansive-soil-evaluation/)
+- [Exploratory Pit](https://houston.geotechnicalengineering1.biz/exploratory-pit/)
+- [Factor Safety](https://houston.geotechnicalengineering1.biz/factor-safety/)
+- [Field Permeability](https://houston.geotechnicalengineering1.biz/field-permeability/)
+- [Field Vane Shear](https://houston.geotechnicalengineering1.biz/field-vane-shear/)
+- [Flat Dilatometer](https://houston.geotechnicalengineering1.biz/flat-dilatometer/)
+- [Flexible Pavement Design](https://houston.geotechnicalengineering1.biz/flexible-pavement-design/)
+- [Foundations](https://houston.geotechnicalengineering1.biz/foundations/)
+- [Geocell Design](https://houston.geotechnicalengineering1.biz/geocell-design/)
+- [Geogrid Specification](https://houston.geotechnicalengineering1.biz/geogrid-specification/)
+- [Geomembrane Specification](https://houston.geotechnicalengineering1.biz/geomembrane-specification/)
+- [Geophysics](https://houston.geotechnicalengineering1.biz/geophysics/)
+- [Geotechnical Design Deep Excavations](https://houston.geotechnicalengineering1.biz/geotechnical-design-deep-excavations/)
+- [Geotechnical Drainage Design](https://houston.geotechnicalengineering1.biz/geotechnical-drainage-design/)
+- [Geotechnical Road Drainage](https://houston.geotechnicalengineering1.biz/geotechnical-road-drainage/)
+- [Grain Size Analysis](https://houston.geotechnicalengineering1.biz/grain-size-analysis/)
+- [Ground Improvement](https://houston.geotechnicalengineering1.biz/ground-improvement/)
+- [Ground Penetrating Radar](https://houston.geotechnicalengineering1.biz/ground-penetrating-radar/)
+- [Grouting Design](https://houston.geotechnicalengineering1.biz/grouting-design/)
+- [Hvsr Microtremor Survey](https://houston.geotechnicalengineering1.biz/hvsr-microtremor-survey/)
+- [In Situ Testing](https://houston.geotechnicalengineering1.biz/in-situ-testing/)
+- [Investigation](https://houston.geotechnicalengineering1.biz/investigation/)
+- [Jet Grouting Design](https://houston.geotechnicalengineering1.biz/jet-grouting-design/)
+- [Laboratory](https://houston.geotechnicalengineering1.biz/laboratory/)
+- [Laboratory Cbr](https://houston.geotechnicalengineering1.biz/laboratory-cbr/)
+- [Landfill Geotechnics](https://houston.geotechnicalengineering1.biz/landfill-geotechnics/)
+- [Lime Cement Stabilization](https://houston.geotechnicalengineering1.biz/lime-cement-stabilization/)
+- [Mechanically Stabilized Earth](https://houston.geotechnicalengineering1.biz/mechanically-stabilized-earth/)
+- [Menard Pressuremeter](https://houston.geotechnicalengineering1.biz/menard-pressuremeter/)
+- [Micropile Design](https://houston.geotechnicalengineering1.biz/micropile-design/)
+- [Oedometer Consolidation](https://houston.geotechnicalengineering1.biz/oedometer-consolidation/)
+- [Pavement Subgrade Design](https://houston.geotechnicalengineering1.biz/pavement-subgrade-design/)
+- [Pile Foundation Design](https://houston.geotechnicalengineering1.biz/pile-foundation-design/)
+- [Pile Skin Friction Vs](https://houston.geotechnicalengineering1.biz/pile-skin-friction-vs/)
+- [Plate Load](https://houston.geotechnicalengineering1.biz/plate-load/)
+- [Porchet Double Ring Infiltrometer](https://houston.geotechnicalengineering1.biz/porchet-double-ring-infiltrometer/)
+
+## Contact
+- Website: https://houston.geotechnicalengineering1.biz/
+
+## About
+This page provides information about geotechnical engineering services available in United States.
+The company complies with local and international standards including ASTM, ISO and country-specific norms.
