@@ -124,6 +124,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -175,7 +211,9 @@ header.hero, .hero { position: relative !important; }
 <div class="sub-svc"><div class="sub-svc-num" style="color:#EA580C;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#171717;font-size:1.1rem;margin:.3rem 0 .5rem">Watershed-Scale Debris Flow Modeling</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Hydrologic and hydraulic modeling of entire drainage basins using FLO-2D, calibrated with USGS gauge data and NRCS rainfall curves. Outputs include flow depth, velocity maps, and hazard zone delineation for 10-year, 50-year, and 100-year storm events.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#EA580C;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#171717;font-size:1.1rem;margin:.3rem 0 .5rem">Site-Specific Debris Flow Risk Assessment</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Focused analysis for individual lots or subdivisions near bayous, detention ponds, or highway embankments. Includes soil borings, <a data-interlink="1" href="../porchet-double-ring-infiltrometer/">infiltration tests</a>, and runout modeling to determine safe building envelopes and erosion control requirements.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#EA580C;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#171717;font-size:1.1rem;margin:.3rem 0 .5rem">Mitigation Design &amp; Plan Review</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Structural recommendations such as debris basins, reinforced channels, or gabion walls, plus non-structural measures like grading modifications and vegetated swales. We also review existing drainage plans for compliance with Harris County Flood Control District standards.</p></div>
 </div>
 </div>
-</section>
+<section class="block" style="padding:1.5rem"><div style="max-width:1200px;margin:0 auto"><p style="margin-top:0">This service complements our <a href="/laboratory/">laboratory testing</a> work for a complete project analysis.</p></div></section>
+
+    </section>
 <section class="section"><h2>Reference standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>ASCE 7-22 (Minimum Design Loads, Chapter 6 – Flood Loads), IBC 2021 (Section 1803 – Geotechnical Investigation, Section 1612 – Flood-Resistant Construction), FHWA HEC-23 (Design of Riprap and Rock Protection for Debris Flow Mitigation), ASTM D2487-17 (Standard Practice for Classification of Soils for Engineering Purposes)</p></section>

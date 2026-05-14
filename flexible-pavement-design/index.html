@@ -124,6 +124,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -179,7 +215,7 @@ header.hero, .hero { position: relative !important; }
 <section class="section"><h2>Reference standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>TxDOT Item 340 (Flexible Pavement Design), AASHTO Guide for Design of Pavement Structures (1993, with 1998 supplement), ASTM D1883 (CBR Test for Subgrade Soils)</p></section>
-<section class="section"><h2>Q&A</h2><details><summary>What is the typical cost range for a flexible pavement design study in Houston?</summary><p>For a standard project covering one to four lane-miles of roadway, the geotechnical investigation and design report typically falls between US$1.480 and US$5.360. The final cost depends on the number of test pits required, laboratory testing volume, and the complexity of drainage design.</p></details><details><summary>Why does Houston clay require a thicker base layer than other regions?</summary><p>Houston's Beaumont clay has a plasticity index that often exceeds 40, meaning it expands significantly when wet and contracts when dry. A thicker crushed limestone base distributes traffic loads more evenly and acts as a capillary break, reducing moisture migration into the subgrade. Without that buffer, the pavement surface can develop severe cracking within two years.</p></details><details><summary>How does the AASHTO 93 method apply to flexible pavement design in Houston?</summary><p>The AASHTO 93 method uses structural number, subgrade resilient modulus, and traffic load (ESALs) to determine the required pavement thickness. In Houston, we typically adjust the subgrade modulus downward by 30-40 percent to account for the clay's low soaked CBR and high swell potential. This conservative approach extends pavement life despite the challenging soil conditions.</p></details><details><summary>Can flexible pavement be used on Houston's major arterial roads like I-10 or the Sam Houston Tollway?</summary><p>For high-traffic arterials carrying over 30 million ESALs, TxDOT typically specifies rigid pavement (concrete) because it distributes loads more efficiently on weak subgrades. Flexible pavement is best suited for collector streets, residential roads, parking lots, and light-industrial access roads where traffic volumes are moderate and budget constraints favor asphalt.</p></details><details><summary>What site conditions would require switching from flexible to rigid pavement design in Houston?</summary><p>If the subgrade CBR is below 2 after stabilization attempts, or if the water table remains within three feet of the surface year-round, rigid pavement often becomes the more reliable option. Flexible pavement relies on the subgrade for structural support, whereas concrete slabs can span weak spots better. We always evaluate both options during the design phase and present a cost-benefit comparison to the client.</p></details></section>
+<section class="section"><h2>Q&A</h2><details><summary>What is the typical cost range for a flexible pavement design study in Houston?</summary><p>For a standard project covering one to four lane-miles of roadway, the geotechnical investigation and design report typically falls between US$1.480 and US$5.360. The final cost depends on the number of test pits required, <a href="/laboratory/">laboratory</a> testing volume, and the complexity of drainage design.</p></details><details><summary>Why does Houston clay require a thicker base layer than other regions?</summary><p>Houston's Beaumont clay has a plasticity index that often exceeds 40, meaning it expands significantly when wet and contracts when dry. A thicker crushed limestone base distributes traffic loads more evenly and acts as a capillary break, reducing moisture migration into the subgrade. Without that buffer, the pavement surface can develop severe cracking within two years.</p></details><details><summary>How does the AASHTO 93 method apply to flexible pavement design in Houston?</summary><p>The AASHTO 93 method uses structural number, subgrade resilient modulus, and traffic load (ESALs) to determine the required pavement thickness. In Houston, we typically adjust the subgrade modulus downward by 30-40 percent to account for the clay's low soaked CBR and high swell potential. This conservative approach extends pavement life despite the challenging soil conditions.</p></details><details><summary>Can flexible pavement be used on Houston's major arterial roads like I-10 or the Sam Houston Tollway?</summary><p>For high-traffic arterials carrying over 30 million ESALs, TxDOT typically specifies rigid pavement (concrete) because it distributes loads more efficiently on weak subgrades. Flexible pavement is best suited for collector streets, residential roads, parking lots, and light-industrial access roads where traffic volumes are moderate and budget constraints favor asphalt.</p></details><details><summary>What site conditions would require switching from flexible to rigid pavement design in Houston?</summary><p>If the subgrade CBR is below 2 after stabilization attempts, or if the water table remains within three feet of the surface year-round, rigid pavement often becomes the more reliable option. Flexible pavement relies on the subgrade for structural support, whereas concrete slabs can span weak spots better. We always evaluate both options during the design phase and present a cost-benefit comparison to the client.</p></details></section>
 <section class="block map-block" style="padding:3rem 1.5rem">
 <div style="max-width:1200px;margin:0 auto">
 <h2 style="margin-bottom:.8rem;font-weight:700">Location and service area</h2>

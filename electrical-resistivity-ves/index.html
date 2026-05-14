@@ -124,6 +124,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -178,7 +214,7 @@ header.hero, .hero { position: relative !important; }
 </section>
 <section class="section"><h2>Reference standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>ASTM G57-06 — Standard Test Method for Field Measurement of Soil Resistivity, IBC 2021 — Section 1803 (Geotechnical Investigation) and 1806 (Presumptive Load-Bearing Values), ASCE 7-22 — Chapter 11 (Seismic Design Criteria — site class correlation via resistivity)</p></section>
+<p>ASTM G57-06 — Standard Test Method for Field Measurement of Soil Resistivity, IBC 2021 — Section 1803 (Geotechnical Investigation) and 1806 (Presumptive Load-Bearing Values), ASCE 7-22 — Chapter 11 (<a href="/seismic/">Seismic</a> Design Criteria — site class correlation via resistivity)</p></section>
 <section class="section"><h2>Q&A</h2><details><summary>What is the difference between electrical resistivity / VES and a standard geotechnical boring?</summary><p>A boring gives you a direct sample at discrete points — you see the soil at that exact location. VES gives you a continuous vertical profile of resistivity vs. depth, which correlates to lithology and moisture content but does not replace a physical sample. We recommend using VES as a reconnaissance tool to optimize boring locations and reduce the number of holes needed.</p></details><details><summary>How deep can a VES survey reach in Houston soils?</summary><p>With a standard Wenner array and maximum electrode spacing of 50 m, we can resolve layers down to about 40–50 m (130–165 ft). For deeper targets (up to 100 m), we use a Schlumberger array with larger current electrode separation. The actual depth depends on the resistivity contrast and the noise level — in Houston's clay-rich environment, we typically get good signal to 60 m.</p></details><details><summary>Can VES detect the depth to bedrock in Houston?</summary><p>In most of Houston, bedrock (typically the Cretaceous Glen Rose limestone or deeper) lies 2,000 to 10,000 ft below ground — far beyond the range of any surface resistivity method. VES is not used for bedrock depth here. Instead, it is excellent for mapping the base of the Beaumont clay (typically 30–80 ft deep) or detecting sand bodies within the alluvial sequence that affect foundation design.</p></details><details><summary>How much does an electrical resistivity / VES survey cost in Houston?</summary><p>For a standard VES with one array and 1-D inversion, you can expect to pay between US$670 and US$1,110 per sounding, depending on the number of points, access difficulty, and whether you need a full report with interpreted cross-sections. Volume discounts apply for multi-site projects. Always request a quote specific to your site conditions.</p></details><details><summary>What is the typical turnaround time for a VES survey in the Houston area?</summary><p>Fieldwork usually takes one day per 4–6 soundings. Data inversion and reporting take another 3–5 business days. For an average residential subdivision with 8–10 soundings, we deliver the final report within 10 working days. Rush service (48 hours) is available for emergency assessments.</p></details></section>
 <section class="block map-block" style="padding:3rem 1.5rem">
 <div style="max-width:1200px;margin:0 auto">

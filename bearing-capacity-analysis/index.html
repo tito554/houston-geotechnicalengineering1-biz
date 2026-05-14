@@ -124,6 +124,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -179,7 +215,7 @@ header.hero, .hero { position: relative !important; }
 <section class="section"><h2>Reference standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>IBC 2021 Section 1806 (Presumptive Load-Bearing Values), ASTM D1586-18 (<a data-interlink="1" href="../standard-penetration/">Standard Penetration Test</a>), ASCE 7-22 Minimum Design Loads (bearing pressure verification), FHWA NHI-06-089 (Drilled Shaft Design in Clay)</p></section>
-<section class="section"><h2>Q&A</h2><details><summary>What is the typical bearing capacity of Houston clay for a 1.2-m wide footing?</summary><p>For a 1.2-m wide footing bearing on stiff Beaumont Clay at 1.5 m depth, the allowable bearing capacity typically falls between 120 and 180 kPa (2.5-3.8 ksf) when the undrained shear strength is 80-120 kPa. This assumes a factor of safety of 3.0 and no water table within the influence zone. If the clay is desiccated (upper 1 m), the capacity can reach 250 kPa, but we always discount it by 30% to account for wetting.</p></details><details><summary>How does the high plasticity of Houston clay affect bearing capacity analysis?</summary><p>Plasticity index values above 40 mean the clay undergoes significant volume change with moisture variation. During dry months, the clay shrinks and forms desiccation cracks, which reduce the effective contact area under footings. During wet periods, the clay swells and the undrained strength decreases. We address this by running swell-consolidation tests on undisturbed samples and applying the modified bearing capacity equation that includes a correction factor for swelling pressure. For lightly loaded structures, this can reduce the allowable capacity by up to 40%.</p></details><details><summary>Can I rely on the presumptive bearing values from IBC Table 1806.2 for a Houston project?</summary><p>Only for preliminary sizing. IBC Table 1806.2 gives presumptive values of 1,500 psf (72 kPa) for clay and 3,000 psf (144 kPa) for sand, but these do not account for Houston's specific subsurface variability — the Beaumont Clay's plasticity, the presence of sand lenses, or the shallow water table. We recommend a site-specific bearing capacity analysis for any structure with more than 2 stories, for all slabs-on-grade that will carry rack loads, and for any project in flood-prone zones (FEMA Zone A or AE).</p></details></section>
+<section class="section"><h2>Q&A</h2><details><summary>What is the typical bearing capacity of Houston clay for a 1.2-m wide footing?</summary><p>For a 1.2-m wide footing bearing on stiff Beaumont Clay at 1.5 m depth, the allowable bearing capacity typically falls between 120 and 180 kPa (2.5-3.8 ksf) when the undrained shear strength is 80-120 kPa. This assumes a <a href="/factor-safety/">factor of safety</a> of 3.0 and no water table within the influence zone. If the clay is desiccated (upper 1 m), the capacity can reach 250 kPa, but we always discount it by 30% to account for wetting.</p></details><details><summary>How does the high plasticity of Houston clay affect bearing capacity analysis?</summary><p>Plasticity index values above 40 mean the clay undergoes significant volume change with moisture variation. During dry months, the clay shrinks and forms desiccation cracks, which reduce the effective contact area under footings. During wet periods, the clay swells and the undrained strength decreases. We address this by running swell-consolidation tests on undisturbed samples and applying the modified bearing capacity equation that includes a correction factor for swelling pressure. For lightly loaded structures, this can reduce the allowable capacity by up to 40%.</p></details><details><summary>Can I rely on the presumptive bearing values from IBC Table 1806.2 for a Houston project?</summary><p>Only for preliminary sizing. IBC Table 1806.2 gives presumptive values of 1,500 psf (72 kPa) for clay and 3,000 psf (144 kPa) for sand, but these do not account for Houston's specific subsurface variability — the Beaumont Clay's plasticity, the presence of sand lenses, or the shallow water table. We recommend a site-specific bearing capacity analysis for any structure with more than 2 stories, for all slabs-on-grade that will carry rack loads, and for any project in flood-prone zones (FEMA Zone A or AE).</p></details></section>
 <section class="block map-block" style="padding:3rem 1.5rem">
 <div style="max-width:1200px;margin:0 auto">
 <h2 style="margin-bottom:.8rem;font-weight:700">Location and service area</h2>

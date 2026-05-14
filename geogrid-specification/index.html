@@ -124,6 +124,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -140,7 +176,7 @@ header.hero, .hero { position: relative !important; }
 <p class="together">Together, we solve the challenges of tomorrow.</p>
 <a class="hero-cta" href="#main-content">SEE MORE →</a>
 </div></header>
-<section class="section" id="main-content"><p>The difference between building on the Beaumont Formation clay near Memorial Park versus the alluvial sands along the Buffalo Bayou corridor is night and day. In Houston, the upper clay crust can support moderate loads, but the underlying Beaumont clay exhibits high plasticity and shrink-swell potential. That is why geogrid specification must account for the specific soil profile at each site. We have seen projects in the Energy Corridor where a uniaxial geogrid was the only solution to prevent lateral spreading under embankment loads. Conversely, subdivisions in Katy often require biaxial geogrids for subgrade stabilization before placing base course. Before writing a specification, we always review the ensayo-proctor results to confirm compaction targets, and we cross-reference the corte-directo shear strength parameters to match the geogrid tensile capacity with the mobilized soil resistance.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/geomallas-2.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Geogrid specification in " style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure><blockquote style="border-left:4px solid #EA580C;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">Houston clay with PI above 50 requires geogrid aperture stability verification; junction efficiency is not optional for long-term performance.</blockquote></section>
+<section class="section" id="main-content"><p>The difference between building on the Beaumont Formation clay near Memorial Park versus the alluvial sands along the Buffalo Bayou corridor is night and day. In Houston, the upper clay crust can support moderate loads, but the underlying Beaumont clay exhibits high plasticity and shrink-swell potential. That is why geogrid specification must account for the specific soil profile at each site. We have seen projects in the Energy Corridor where a uniaxial geogrid was the only solution to prevent lateral spreading under embankment loads. Conversely, subdivisions in Katy often require biaxial geogrids for subgrade stabilization before placing base course. Before writing a specification, we always review the ensayo-proctor results to confirm compaction targets, and we cross-reference the corte-<a href="/direct-shear/">directo shear</a> strength parameters to match the geogrid tensile capacity with the mobilized soil resistance.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/geomallas-2.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Geogrid specification in " style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure><blockquote style="border-left:4px solid #EA580C;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">Houston clay with PI above 50 requires geogrid aperture stability verification; junction efficiency is not optional for long-term performance.</blockquote></section>
 <section class="section"><h2>Process overview</h2><div>Around Houston, many engineers assume a standard biaxial geogrid works everywhere. That is a mistake. The clay in the Greater Houston area can have a plasticity index above 50, which means the geogrid must be specified with adequate aperture stability to prevent the clay from punching through. Our team follows ASTM D6637 for tensile testing and ASTM D4759 for installation damage reduction factors. <ul><li>Uniaxial geogrids for reinforced soil slopes and retaining walls where tensile strength along one axis is critical</li><li>Biaxial geogrids for subgrade stabilization under paved and unpaved roads</li><li>Triaxial geogrids for multi-directional load distribution in soft subgrades</li></ul> Each type requires a specific junction efficiency and long-term design strength. We also consider the site's groundwater level, because a high water table can reduce geogrid-soil interlock. For projects near the Houston Ship Channel, we often recommend a geocomposite that combines drainage with reinforcement.</div></section>
 <section class="section img-inline-block" style="padding:1.5rem 2.5rem">
 <div style="max-width:60%;margin:0 auto">

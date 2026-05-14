@@ -124,6 +124,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -140,7 +176,7 @@ header.hero, .hero { position: relative !important; }
 <p class="together">Together, we solve the challenges of tomorrow.</p>
 <a class="hero-cta" href="#main-content">SEE MORE →</a>
 </div></header>
-<section class="section" id="main-content"><p>Houston sits on up to 15 km of unconsolidated Tertiary and Quaternary sediments, a deep alluvial sequence that amplifies seismic waves from distant events like the 2011 Oklahoma earthquakes. The Gulf Coast plain's soft clays and loose sands, combined with a shallow water table at 1.5–4.5 m, create a classic basin effect where long-period motions dominate. For any structure over 3 stories or with an Importance Factor ≥ 1.0, IBC and ASCE 7-22 mandate a site-specific ground motion hazard analysis rather than relying on generic NEHRP maps. The key output is the acceleration response spectrum at the ground surface, which directly governs base shear calculations for foundation and superstructure design. This is not a desktop study it requires field measurements of vs30/" data-interlink="1"&gt;shear wave velocity via MASW-Vs30 profiling and sometimes downhole seismic testing to capture the stiffness profile of the Beaumont and Lissie formations.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/respuesta-sismica-4.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Site response analysis in " style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure><blockquote style="border-left:4px solid #EA580C;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">Houston's deep alluvial basin amplifies long-period shaking by 2 to 4 times compared to a rock site, which directly increases design base shear for mid-rise structures.</blockquote></section>
+<section class="section" id="main-content"><p>Houston sits on up to 15 km of unconsolidated Tertiary and Quaternary sediments, a deep alluvial sequence that amplifies seismic waves from distant events like the 2011 Oklahoma earthquakes. The Gulf Coast plain's soft clays and loose sands, combined with a shallow water table at 1.5–4.5 m, create a classic basin effect where long-period motions dominate. For any structure over 3 stories or with an Importance Factor ≥ 1.0, IBC and ASCE 7-22 mandate a site-specific ground motion hazard analysis rather than relying on generic NEHRP maps. The key output is the acceleration response spectrum at the ground surface, which directly governs base shear calculations for foundation and superstructure design. This is not a desktop study it requires field measurements of vs30/" data-interlink="1"&gt;<a href="/shear-wave-velocity/">shear wave velocity</a> via MASW-Vs30 profiling and sometimes downhole seismic testing to capture the stiffness profile of the Beaumont and Lissie formations.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/respuesta-sismica-4.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Site response analysis in " style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure><blockquote style="border-left:4px solid #EA580C;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">Houston's deep alluvial basin amplifies long-period shaking by 2 to 4 times compared to a rock site, which directly increases design base shear for mid-rise structures.</blockquote></section>
 <section class="section"><h2>Process overview</h2><div>In practice, we start with a microtremor HVSR survey to identify the fundamental site frequency, which in Houston typically falls between 0.4 and 1.2 Hz depending on sediment thickness. Then we run MASW arrays along two perpendicular lines to compute the time-averaged shear wave velocity to 30 m depth (Vs30). The field data feeds directly into a 1D equivalent-linear site response analysis using programs like DEEPSOIL or STRATA. We model the soil profile as multiple visco-elastic layers, each with its own shear modulus reduction and damping curves from Darendeli 2001. The input motion is selected from the NGA-West2 database, scaled to match the ASCE 7-22 target spectrum for the 2% in 50-year hazard level. The output includes peak ground acceleration at surface, spectral accelerations at 0.2s and 1.0s, and the design response spectrum. For projects near the Houston Ship Channel or on hydraulic fill, we also incorporate a liquefaction triggering evaluation using the Youd-Idriss 2001 SPT-based method.</div></section>
 <section class="section img-inline-block" style="padding:1.5rem 2.5rem">
 <div style="max-width:60%;margin:0 auto">

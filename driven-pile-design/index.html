@@ -124,6 +124,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -179,7 +215,7 @@ header.hero, .hero { position: relative !important; }
 <section class="section"><h2>Reference standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>IBC (International Building Code) 2018 — Chapter 18: Soils and Foundations, ASTM D1586-18: Standard Test Method for <a data-interlink="1" href="../standard-penetration/">Standard Penetration Test</a> (SPT), ASTM D3966-18: Standard Test Methods for Deep Foundations Under Lateral Load, ACI 543R-12: Guide to Design, Manufacture, and Installation of Concrete Piles</p></section>
-<section class="section"><h2>Q&A</h2><details><summary>How deep do driven piles typically go in Houston?</summary><p>In most of Houston, driven piles reach depths between 25 and 45 meters to penetrate the Beaumont clay and bear on the underlying dense sand or stiff clay layers. The exact depth depends on the structural load and the N-values obtained during the SPT investigation.</p></details><details><summary>What is the difference between driven piles and drilled shafts for Houston soils?</summary><p>Driven piles are prefabricated and hammered into the ground, displacing the soil, while drilled shafts are cast-in-place after excavation. Driven piles are preferred in Houston when the bearing stratum is deep or when there is a risk of caving in the borehole due to the high plasticity clays. Drilled shafts require slurry support in these conditions.</p></details><details><summary>How much does a driven pile design study cost in Houston?</summary><p>A typical driven pile design study including SPT borings, laboratory testing, static analysis, and a test pile program ranges between US$1,320 and US$3,590 for a standard commercial project. The final cost depends on the number of borings, the depth of investigation, and the number of test piles required.</p></details><details><summary>What causes pile refusal in Houston clay?</summary><p>Pile refusal occurs when the soil resistance exceeds the hammer's capacity to advance the pile. In Houston, the primary cause is the presence of desiccated crusts or overconsolidated clay layers that have high undrained shear strength. Pre-drilling or using a larger hammer can overcome this, but the driveability study must account for these layers.</p></details><details><summary>Do I need a test pile program for a small warehouse project?</summary><p>For projects with fewer than 50 piles, a test pile program is not mandatory under IBC, but it is strongly recommended if the site has variable subsurface conditions. The cost of the test pile is offset by the confidence it provides in the design capacity, often allowing a reduction in the number of piles or a lower safety factor.</p></details></section>
+<section class="section"><h2>Q&A</h2><details><summary>How deep do driven piles typically go in Houston?</summary><p>In most of Houston, driven piles reach depths between 25 and 45 meters to penetrate the Beaumont clay and bear on the underlying dense sand or stiff clay layers. The exact depth depends on the structural load and the N-values obtained during the SPT investigation.</p></details><details><summary>What is the difference between driven piles and drilled shafts for Houston soils?</summary><p>Driven piles are prefabricated and hammered into the ground, displacing the soil, while drilled shafts are cast-in-place after excavation. Driven piles are preferred in Houston when the bearing stratum is deep or when there is a risk of caving in the borehole due to the high plasticity clays. Drilled shafts require slurry support in these conditions.</p></details><details><summary>How much does a driven pile design study cost in Houston?</summary><p>A typical driven pile design study including SPT borings, <a href="/laboratory/">laboratory</a> testing, static analysis, and a test pile program ranges between US$1,320 and US$3,590 for a standard commercial project. The final cost depends on the number of borings, the depth of investigation, and the number of test piles required.</p></details><details><summary>What causes pile refusal in Houston clay?</summary><p>Pile refusal occurs when the soil resistance exceeds the hammer's capacity to advance the pile. In Houston, the primary cause is the presence of desiccated crusts or overconsolidated clay layers that have high undrained shear strength. Pre-drilling or using a larger hammer can overcome this, but the driveability study must account for these layers.</p></details><details><summary>Do I need a test pile program for a small warehouse project?</summary><p>For projects with fewer than 50 piles, a test pile program is not mandatory under IBC, but it is strongly recommended if the site has variable subsurface conditions. The cost of the test pile is offset by the confidence it provides in the design capacity, often allowing a reduction in the number of piles or a lower safety factor.</p></details></section>
 <section class="block map-block" style="padding:3rem 1.5rem">
 <div style="max-width:1200px;margin:0 auto">
 <h2 style="margin-bottom:.8rem;font-weight:700">Location and service area</h2>
